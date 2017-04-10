@@ -1,0 +1,18 @@
+
+{
+	"manifest_version": 2,
+	"name": "image replace local",
+	"description": "whatever",
+	"version": "1.0"
+
+	"browser_action": {
+		"de"
+	}
+	
+}		
+
+}
+
+"web_accesible_resources"
+
+setInterval

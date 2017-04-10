@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+
+	"name": "Sex Sells",
+	"description": "Uses a locally-stored image to replace images on the page with a content script",
+	"version": "1.0",
+
+	"browser_action": {
+		"default_icon": "icon.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["background.js", "p5.min.js", "p5.dom.min.js", "replaceImages.js", "replace.js"],
+			"run_at": "document_idle"
+		}
+	],
+	"background": {
+		"scripts": ["background.js"]
+	},
+
+"permissions": [
+		"tabs",
+		"http://*/*",
+		"https://*/*"
+	],
+	"web_accessible_resources": [
+		"sexy.png"
+	]
+}
