@@ -1,0 +1,30 @@
+manifest.json
+
+
+{	
+	"manifest_version": 2,
+	"name": "in class 1"
+	"description":  "change background color with pop up",
+	"version": "1.0",
+
+	"browser_action": {
+		"default_title": "Set this page's color",
+		"default_icon"; 
+
+		"default_popup": "popup.html"
+	},
+
+	"permissions": [
+	"tabs"
+	"http://*/*"
+	"https://*/*"
+
+	"background": {
+		"scripts": ["background.js"]
+	},
+
+"manifest_version": 2
+
+
+	
+}		

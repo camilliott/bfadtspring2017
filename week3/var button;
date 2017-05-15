@@ -1,0 +1,28 @@
+var button;
+
+
+function setup (){
+	//create canvas(400,400);
+	noCanvas();
+	button = select('#change-color');
+	button.mousePressed(changeColor);
+	
+}
+
+function draw() {
+	ellipse(mouseX,mouseY,50,50)
+
+}
+
+function changeColor() {
+//we need to route to the current tab
+//to tell it to change CSS
+//current tab- execute a script
+
+//need to get permission for pop up access the tab
+chrome.tabs.executeScript(null, {
+
+code: "console.log();"
+	
+
+}

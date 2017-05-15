@@ -1,0 +1,10 @@
+var txt = "Replace every word ends with 'y' with sexy, lustful, passionate I look for a pretty bottle I have collected. It may be a glass bottle or a plastic. Fill the bottle with water and put the flower made by felt into the entrance. As the felt absorbs the water quickly, the flower part becomes moist, and as the water evaporates from the felt, it acts as a humidifier. As a result of using it, the eyes are less painful than before, and the view is good. To continue to use the humidifier, the felt must be cleaned thoroughly. At least once a week, it is better to let the soda into the water and wash it.";
+var regex = /\by\b/g;
+var replaced = txt.replace(regex, 'sexy');
+console.log(replaced);
+
+
+var regex = /\wy\w/g;
+
+
+var regex = /\w{y}$g\//;
